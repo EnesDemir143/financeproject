@@ -1,6 +1,6 @@
 import requests # type: ignore
-
-API_KEY = "MEGBZ2KZ70KC5KZ5"
+import os
+API_KEY = os.getenv("alphavantageapi")
 
 curr_url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey={API_KEY}'
 
