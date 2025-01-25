@@ -3,7 +3,7 @@ import os
 from datatosql import db
 from dotenv import load_dotenv  # python-dotenv kütüphanesini import edin
 
-load_dotenv("/Users/enesdemir/Desktop/financeProject/.venv")
+load_dotenv("/Users/enesdemir/Desktop/financeProject/.venv/.env")
 
 API_KEY = os.getenv("alphavantageapi")
 

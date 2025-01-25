@@ -19,3 +19,4 @@ CREATE TABLE stock_data(
     FOREIGN KEY(company_id) REFERENCES company (id)
 );
 
+CREATE TABLE 

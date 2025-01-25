@@ -6,7 +6,7 @@ from datatosql import db
 import logging
 from dotenv import load_dotenv  
 
-load_dotenv("/Users/enesdemir/Desktop/financeProject/.venv")
+load_dotenv("/Users/enesdemir/Desktop/financeProject/.venv/.env")
 
 # Log ayarlarını yapılandır
 logging.basicConfig(
@@ -39,7 +39,7 @@ def url_istek_at():
     except Exception as e:
         logging.error(f"Beklenmeyen bir hata oluştu: {e}")
 
-schedule.every().day.at("10:00").do(url_istek_at)
+schedule.every().day.at("14:54").do(url_istek_at)
 
 logging.info("Zamanlayıcı başlatıldı. İşlemler başlıyor...")
 while True:
